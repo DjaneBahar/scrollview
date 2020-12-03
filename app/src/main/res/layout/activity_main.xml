@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="152dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+
+            android:id="@+id/txtdashboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:textColor="@color/turkis"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/txtitems"
+            android:layout_marginTop="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginBottom="92dp"
+            android:text="Choose"
+            android:textSize="15sp"
+            android:textColor="@color/grey" />
+
+        <ImageView
+            android:layout_width="41dp"
+            android:layout_height="43dp"
+            android:layout_alignParentRight="true"
+            android:background="@color/colorPrimary"
+            android:src="@drawable/settings" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/exercises_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="322dp"
+        android:layout_marginEnd="60dp"
+        android:text="EXERCISES"
+        android:textColor="@color/turkis"
+        android:textSize="35sp" />
+
+    <ImageView
+        android:id="@+id/insight_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="173dp"
+        app:srcCompat="@drawable/circle" />
+
+    <ImageView
+        android:id="@+id/exersies_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="293dp"
+        app:srcCompat="@drawable/circle" />
+
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="285dp"
+        android:layout_marginBottom="498dp"
+        app:srcCompat="@drawable/circle" />
+
+    <TextView
+        android:id="@+id/profile_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="165dp"
+        android:layout_marginEnd="104dp"
+        android:text="PROFILE"
+        android:textColor="@color/turkis"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/insight_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="480dp"
+        android:layout_marginEnd="100dp"
+        android:text="INSIGHT"
+        android:textColor="@color/turkis"
+        android:textSize="35sp" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/colorPrimary"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:menu="@menu/menu_navigation"
+
+
+        >
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+
+</RelativeLayout>
+
+
